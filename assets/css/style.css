@@ -522,6 +522,7 @@ span {
 }
 
 .skills-content .progres .bar span {
+  position: relative;
   display: block;
   height: 100%;
   border-radius: 0.3rem;
@@ -529,35 +530,35 @@ span {
 }
 
 .skills-column:nth-child(1) .skills-content .progres:nth-child(1) .bar span {
-  width: 55%;
+  width: 0;
 }
 
 .skills-column:nth-child(1) .skills-content .progres:nth-child(2) .bar span {
-  width: 60%;
+  width: 0 ;
 }
 
 .skills-column:nth-child(1) .skills-content .progres:nth-child(3) .bar span {
-  width: 40%;
+  width: 0;
 }
 
 .skills-column:nth-child(1) .skills-content .progres:nth-child(4) .bar span {
-  width: 50%;
+  width: 0;
 }
 
 .skills-column:nth-child(2) .skills-content .progres:nth-child(1) .bar span {
-  width: 30%;
+  width: 0;
 }
 
 .skills-column:nth-child(2) .skills-content .progres:nth-child(2) .bar span {
-  width: 25%;
+  width: 0;
 }
 
 .skills-column:nth-child(2) .skills-content .progres:nth-child(3) .bar span {
-  width: 25%;
+  width: 0;
 }
 
 .skills-column:nth-child(2) .skills-content .progres:nth-child(4) .bar span {
-  width: 55%;
+  width: 0;
 }
 
 /* Contact Section */
@@ -889,6 +890,54 @@ span {
   }
 }
 
+@keyframes showLeft1 {
+  100% {
+    width: 55%;
+  }
+}
+
+@keyframes showLeft2 {
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes showLeft3 {
+  100% {
+    width: 40%;
+  }
+}
+
+@keyframes showLeft4 {
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes showLeft5 {
+  100% {
+    width: 30%;
+  }
+}
+
+@keyframes showLeft6 {
+  100% {
+    width: 20%;
+  }
+}
+
+@keyframes showLeft7 {
+  100% {
+    width: 25%;
+  }
+}
+
+@keyframes showLeft8 {
+  100% {
+    width: 55%;
+  }
+}
+
 /* Animation On Scroll */
 .animated {
   position: absolute;
@@ -941,6 +990,46 @@ span {
 .footer.show-animate .animated.scroll {
   transition-delay: calc(.3s * var(--i));
   width: 0;
+}
+
+.skills.show-animate .progres:nth-child(1) .animated.scroll {
+  animation: showLeft1 3s ease forwards;
+  animation-delay: calc(.3s * var(--i));
+}
+
+.skills.show-animate .progres:nth-child(2) .animated.scroll {
+  animation: showLeft2 3s ease forwards;
+  animation-delay: calc(.3s * var(--i));
+}
+
+.skills.show-animate .progres:nth-child(3) .animated.scroll {
+  animation: showLeft3 3s ease forwards;
+  animation-delay: calc(.3s * var(--i));
+}
+
+.skills.show-animate .progres:nth-child(4) .animated.scroll {
+  animation: showLeft4 3s ease forwards;
+  animation-delay: calc(.3s * var(--i));
+}
+
+.skills.show-animate .skills-column:nth-child(2) .progres:nth-child(1) .animated.scroll {
+  animation: showLeft5 3s ease forwards;
+  animation-delay: calc(.3s * var(--i));
+}
+
+.skills.show-animate .skills-column:nth-child(2) .progres:nth-child(2) .animated.scroll {
+  animation: showLeft6 3s ease forwards;
+  animation-delay: calc(.3s * var(--i));
+}
+
+.skills.show-animate .skills-column:nth-child(2) .progres:nth-child(3) .animated.scroll {
+  animation: showLeft7 3s ease forwards;
+  animation-delay: calc(.3s * var(--i));
+}
+
+.skills.show-animate .skills-column:nth-child(2) .progres:nth-child(4) .animated.scroll {
+  animation: showLeft8 3s ease forwards;
+  animation-delay: calc(.3s * var(--i));
 }
 
 .animated.home-img {
