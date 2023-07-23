@@ -56,9 +56,9 @@
       </div>
 
       <div class="home-social">
-        <a href="https://web.facebook.com/dhea.provider" target="_blank" ><i class="bx bxl-facebook"></i></a>
-        <a href="https://www.linkedin.com/in/dhea-ramdani-4b251124b" target="_blank" ><i class="bx bxl-linkedin"></i></a>
-        <a href="https://www.instagram.com/dhearrrrrrrrrr/" target="_blank"><i class="bx bxl-instagram"></i></a>
+        <a href="https://web.facebook.com/dhea.provider" target="_blank" ><i id="facebook" class="bx bxl-facebook"></i></a>
+        <a href="https://www.linkedin.com/in/dhea-ramdani-4b251124b" target="_blank" ><i id="linkedin" class="bx bxl-linkedin"></i></a>
+        <a href="https://www.instagram.com/dhearrrrrrrrrr/" target="_blank"><i id="instagram" class="bx bxl-instagram"></i></a>
         <span class="animated" style="--i:6;"></span>
       </div>
 
@@ -280,12 +280,12 @@
       <form action="#">
         <div class="input-box">
           <div class="input-field">
-            <input type="text" placeholder="Full Name" required />
+            <input type="text" placeholder="Full Name" id="name" required />
             <span class="focus"></span>
             <span class="animated scroll" style="--i:2;"></span>
           </div>
           <div class="input-field">
-            <input type="text" placeholder="Email Address" required />
+            <input type="text" placeholder="Email Address" id="email" required />
             <span class="focus"></span>
             <span class="animated scroll" style="--i:3;"></span>
           </div>
@@ -293,12 +293,12 @@
 
         <div class="input-box">
           <div class="input-field">
-            <input type="number" placeholder="Mobile Number" required />
+            <input type="number" placeholder="Mobile Number" id="nomer" required />
             <span class="focus"></span>
             <span class="animated scroll" style="--i:4;"></span>
           </div>
           <div class="input-field">
-            <input type="text" placeholder="Address" required />
+            <input type="text" placeholder="Subject" id="subject" required />
             <span class="focus"></span>
             <span class="animated scroll" style="--i:5;"></span>
           </div>
@@ -307,7 +307,7 @@
         <div class="textarea-field">
           <textarea
             name=""
-            id=""
+            id="message"
             cols="30"
             rows="10"
             placeholder="Your Message"
@@ -318,7 +318,7 @@
         </div>
 
         <div class="btn-box btns">
-          <button type="submit" class="btn">Submit</button>
+          <button type="submit" class="btn" id="btn">Submit</button>
           <span class="animated scroll" style="--i:7;"></span>
         </div>
       </form>
@@ -326,14 +326,48 @@
 
     <!-- footer design -->
     <footer class="footer">
-      <div class="footer-text">
-        <p>Copyright &copy; 2023 by Dhea | All Rights Reserved. <span class="animated scroll" style="--i:1;"></span></p>
-      </div>
+      <div class="row">
+        <div class="col">
+          <img src="assets/images/fav-icon.png" alt="" class="logo-footer">
+          <p>I am a junior frontend developer, I have mastered front-end
+            technologies such as HTML , CSS, and JavaScript, I am experienced in
+            developing responsive web interfaces</p>
+        </div>
 
-      <div class="footer-iconTop">
-        <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
-        <span class="animated scroll" style="--i:3;"></span>
+        <div class="col">
+          <h3>Address</h3>
+          <p>Dhea Ramdani</p>
+          <p>JLN. Rancapetir Rt.04 Rw.28 Ciamis</p>
+          <p>46211</p>
+          <p class="email-id">dhearr27@gmail.com</p>
+          <h4>+62-895613983943</h4>
+        </div>
+
+        <div class="col">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h3>Connect With Me</h3>
+          <a href="https://web.facebook.com/dhea.provider" target="_blank" ><i id="facebook" class="bx bxl-facebook"></i></a>
+          <a href="https://www.linkedin.com/in/dhea-ramdani-4b251124b" target="_blank" ><i id="linkedin" class="bx bxl-linkedin"></i></a>
+          <a href="https://www.instagram.com/dhearrrrrrrrrr/" target="_blank"><i id="instagram" class="bx bxl-instagram"></i></a>
+        </div>
+
+        <div class="footer-iconTop">
+          <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
+          <span class="animated scroll" style="--i:1;"></span>
+        </div>
       </div>
+      <hr>
+      <p class="copyright">Copyright <span>&copy;</span> 2023 by Dhea <span>|</span> All Rights Reserved.</p>   
     </footer>
 
     <script src="assets/js/script.js"></script>
